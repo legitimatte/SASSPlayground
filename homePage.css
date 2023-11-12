@@ -1,0 +1,184 @@
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*MAIN STYLES*/
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(#fff, #c2c2c2);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  font-size: 28px;
+  margin: 20px 0 0 0;
+  padding: 40px 0;
+  color: #DFDFDF;
+  border-radius: 35% 80% 35% 80%;
+  text-shadow: 0px 0px 1px #181818;
+  box-shadow: 0px 0px 20px #181818;
+  background-image: linear-gradient(to bottom right, red, green, blue);
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+header nav ul li {
+  font-size: 22px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #181818;
+  height: 80px;
+}
+footer #socials_list {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+footer #others_list {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+footer nav ul {
+  display: flex;
+}
+footer nav ul li {
+  margin: 0 10px 0 10px;
+}
+footer nav ul li a {
+  text-decoration: none;
+  box-shadow: 0px 1px 10px #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  color: purple;
+  transition: 1s;
+}
+footer nav ul a:hover {
+  box-shadow: none;
+  background-color: #DFDFDF;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  width: 20%;
+}
+
+#examplerow {
+  width: 80%;
+  min-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#exampleImage {
+  display: flex;
+}
+
+img {
+  box-shadow: 0px 0px 20px #181818;
+}
+
+figcaption {
+  margin: 5px 0 0 0;
+  padding: 5px;
+  background-color: #666666;
+  border-radius: 2px 2px 100% 2px;
+}/*# sourceMappingURL=homePage.css.map */
