@@ -54,17 +54,11 @@ table {
 }
 
 /*MAIN STYLES*/
-html, body {
-  height: 100%;
-}
-
 body {
   background-image: radial-gradient(#fff, #c2c2c2);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
 }
 
 header {
@@ -104,12 +98,7 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-main {
-  flex: 1;
-}
-
 footer {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   padding: 20px 60px;
@@ -160,16 +149,19 @@ h1 {
   width: 20%;
 }
 
+.boundary {
+  width: 80%;
+  height: 5px;
+  background-image: linear-gradient(to right, red, green, blue);
+}
+
 #examplerow {
   width: 80%;
   min-height: 90%;
+  margin: 5% 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-#exampleImage {
-  display: flex;
 }
 
 img {
@@ -181,4 +173,57 @@ figcaption {
   padding: 5px;
   background-color: #666666;
   border-radius: 2px 2px 100% 2px;
+}
+
+#secondExample {
+  margin: 5% 0;
+}
+#secondExample figure {
+  box-shadow: -10px -10px 0 palevioletred, 10px 10px 0 cyan, 0 0 500px 50px #ffffff;
+}
+
+#thirdExample {
+  margin: 5% 0;
+  width: 1200px;
+  height: 1200px;
+  background-image: radial-gradient(600px, #DFDFDF, #DFDFDF, #DFDFDF, #DFDFDF, #DFDFDF, olivedrab);
+  box-shadow: -10px -10px 0 0 olivedrab, 10px 10px 0 0 olivedrab, -10px 10px 0 0 olivedrab, 10px -10px 0 0 olivedrab, -20px -20px 0 0 orange, 20px 20px 0 0 purple;
+  border-radius: 10px;
+}
+#thirdExample #dOne {
+  margin: 20% 0 0 25%;
+  width: 20%;
+  height: 20%;
+  background-color: orange;
+  border-radius: 20% 20% 0 20%;
+}
+#thirdExample #dTwo {
+  margin: auto;
+  width: 20%;
+  height: 20%;
+  background-color: olivedrab;
+  border-radius: 0 60% 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#thirdExample #dTwo a {
+  text-decoration: none;
+  color: #DFDFDF;
+  letter-spacing: 2px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: 0.6s;
+}
+#thirdExample #dTwo a:hover {
+  color: #181818;
+  text-shadow: 0 0 10px #DFDFDF;
+  font-size: 22px;
+}
+#thirdExample #dThree {
+  margin: 0 5% 0 55%;
+  width: 20%;
+  height: 20%;
+  background-color: purple;
+  border-radius: 0 20% 20% 20%;
 }/*# sourceMappingURL=homePage.css.map */
