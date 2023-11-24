@@ -273,4 +273,30 @@ figcaption {
   width: 70%;
   font-size: 32px;
   line-height: 1.2em;
+}
+
+#layers {
+  margin: 2.5%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #181818;
+  box-shadow: 6px 6px #ee8c3f, 14px 14px #181818;
+  box-shadow: 10px 10px #ee8c3f, 20px 20px #181818;
+  transition: 0.8s;
+}
+#layers img {
+  width: 60%;
+  box-shadow: none;
+  transition: 0.8s;
+}
+
+#layers:hover {
+  box-shadow: 6px 6px #ee8c3f, 12px 12px #181818;
+}
+#layers:hover img {
+  rotate: 720deg;
 }/*# sourceMappingURL=homePage.css.map */
