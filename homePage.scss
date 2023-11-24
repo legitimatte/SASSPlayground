@@ -3,7 +3,7 @@
 @use 'foundation';
 
 // variables
-$content-space: 5% 0;
+$content-space: 2.5% 0;
 
 main {
     display: flex;
@@ -22,6 +22,7 @@ h1 {
 
 .boundary {
     width: 80%;
+    margin: 2.5% 0;
     height: 5px;
     background-image: linear-gradient(to right, red, green, blue);
 }
@@ -138,7 +139,7 @@ figcaption {
     box-shadow: -10px -10px 0 0 olivedrab, 10px 10px 0 0 olivedrab, -10px 10px 0 0 olivedrab, 10px -10px 0 0 olivedrab, -20px -20px 0 0 purple, 20px 20px 0 0 orange;
 
     #boxes {
-        rotate: 180deg;
+        rotate: 540deg;
     }
 
     // #dOne {
@@ -195,17 +196,24 @@ figcaption {
     transition: 0.8s;
 
     img {
-        width: 60%;
+        width: 30%;
         box-shadow: none;
         transition: 0.8s;
+    }
+
+    img:nth-child(1) {
+        margin: 0 20% 0 0;
+    }
+
+    img:nth-child(2) {
+        margin: -30% -20% 0 0;
     }
 }
 
 #layers:hover {
-    // border: 6px solid #181818;
     box-shadow: 6px 6px #ee8c3f, 12px 12px #181818;
 
     img {
-        rotate: 720deg;
+        rotate: 360deg;
     }
 }
